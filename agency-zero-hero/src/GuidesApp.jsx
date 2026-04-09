@@ -801,20 +801,15 @@ const T = {
 const FONT = `'Outfit', 'DM Sans', system-ui, sans-serif`;
 const MONO = `'JetBrains Mono', 'Fira Code', monospace`;
 
-// ─── STORAGE HELPERS (localStorage for Cursor / local dev) ─────────────────────
-const STORAGE_KEY = "agency-z2h:projects";
+// ─── STORAGE HELPERS (in-memory – localStorage blocked in deployed iframe) ────
+let _memoryStore = [];
 
 function loadProjects() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch { return []; }
+  try { return _memoryStore; } catch { return []; }
 }
 
 function saveProjects(projects) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(projects));
-  } catch (e) { console.error("Save failed:", e); }
+  try { _memoryStore = JSON.parse(JSON.stringify(projects)); } catch (e) { console.error("Save failed:", e); }
 }
 
 // ─── COMPONENTS ────────────────────────────────────────────────────────────────
