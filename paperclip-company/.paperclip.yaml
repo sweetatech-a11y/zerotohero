@@ -1,0 +1,75 @@
+schema: paperclip/v1
+
+agents:
+  seo-specialist:
+    inputs:
+      env:
+        BRIGHTLOCAL_API_KEY:
+          kind: secret
+          requirement: required
+        GHL_API_KEY:
+          kind: secret
+          requirement: required
+
+  ads-specialist:
+    inputs:
+      env:
+        MADGICX_API_KEY:
+          kind: secret
+          requirement: required
+        GOOGLE_ADS_DEVELOPER_TOKEN:
+          kind: secret
+          requirement: optional
+
+  lead-automation-specialist:
+    inputs:
+      env:
+        GHL_API_KEY:
+          kind: secret
+          requirement: required
+
+  onboarding-specialist:
+    inputs:
+      env:
+        GHL_API_KEY:
+          kind: secret
+          requirement: required
+        BRIGHTLOCAL_API_KEY:
+          kind: secret
+          requirement: required
+        AWARIO_API_KEY:
+          kind: secret
+          requirement: required
+
+  review-specialist:
+    inputs:
+      env:
+        GHL_API_KEY:
+          kind: secret
+          requirement: required
+        BRIGHTLOCAL_API_KEY:
+          kind: secret
+          requirement: required
+
+  brand-monitor-specialist:
+    inputs:
+      env:
+        AWARIO_API_KEY:
+          kind: secret
+          requirement: required
+
+  reporting-director:
+    inputs:
+      env:
+        BRIGHTLOCAL_API_KEY:
+          kind: secret
+          requirement: required
+        GHL_API_KEY:
+          kind: secret
+          requirement: required
+        MADGICX_API_KEY:
+          kind: secret
+          requirement: required
+        AWARIO_API_KEY:
+          kind: secret
+          requirement: required
