@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meta (Facebook &amp; Instagram) Ads — Client Setup Guide</title>
+<style>
+  @page { size: letter; margin: 0.75in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #1a1a2e; line-height: 1.6; background: #fff; max-width: 8.5in; margin: 0 auto; padding: 40px; }
+  .header { display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #1877F2; padding-bottom: 20px; margin-bottom: 30px; }
+  .header h1 { font-size: 26px; color: #1877F2; font-weight: 700; }
+  .header .logo-placeholder { width: 120px; height: 50px; border: 2px dashed #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #999; text-align: center; }
+  .subtitle { font-size: 14px; color: #666; margin-top: 4px; }
+  .intro-box { background: #f0f4ff; border-left: 4px solid #1877F2; padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 30px; }
+  .intro-box p { font-size: 14px; color: #333; }
+  .what-you-need { background: #fffbe6; border: 1px solid #ffe082; border-radius: 8px; padding: 16px 20px; margin-bottom: 30px; }
+  .what-you-need h3 { font-size: 16px; color: #f57f17; margin-bottom: 8px; }
+  .what-you-need ul { padding-left: 20px; }
+  .what-you-need li { font-size: 14px; color: #333; margin-bottom: 4px; }
+  .section { margin-bottom: 28px; page-break-inside: avoid; }
+  .section-title { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e8e8e8; }
+  .step { display: flex; gap: 14px; margin-bottom: 16px; page-break-inside: avoid; }
+  .step-number { flex-shrink: 0; width: 32px; height: 32px; background: #1877F2; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; margin-top: 2px; }
+  .step-content h4 { font-size: 15px; font-weight: 600; color: #1a1a2e; margin-bottom: 4px; }
+  .step-content p { font-size: 13px; color: #555; }
+  .step-content .url { font-family: 'Consolas', monospace; background: #f5f5f5; padding: 2px 8px; border-radius: 4px; font-size: 12px; color: #1877F2; }
+  .step-content .important { color: #d32f2f; font-weight: 600; }
+  .access-box { background: #e8f5e9; border: 2px solid #66bb6a; border-radius: 8px; padding: 20px; margin: 30px 0; }
+  .access-box h3 { color: #2e7d32; font-size: 18px; margin-bottom: 10px; }
+  .access-box p { font-size: 14px; color: #333; margin-bottom: 6px; }
+  .info-field { background: #fff; border: 1px solid #c8e6c9; border-radius: 6px; padding: 10px 14px; margin: 6px 0; display: flex; justify-content: space-between; align-items: center; }
+  .info-field .label { font-size: 13px; font-weight: 600; color: #555; }
+  .info-field .value { font-size: 13px; color: #999; font-style: italic; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 2px solid #e8e8e8; text-align: center; font-size: 12px; color: #999; }
+  .help-box { background: #fff3e0; border: 1px solid #ffcc80; border-radius: 8px; padding: 14px 18px; margin-top: 24px; }
+  .help-box h4 { color: #e65100; font-size: 14px; margin-bottom: 4px; }
+  .help-box p { font-size: 13px; color: #555; }
+  .note-box { background: #fce4ec; border: 1px solid #ef9a9a; border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
+  .note-box p { font-size: 13px; color: #c62828; }
+  @media print {
+    body { padding: 0; }
+    .step { break-inside: avoid; }
+    .section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Meta Ads — Setup Guide</h1>
+    <div class="subtitle">How to set up Facebook Business Manager &amp; grant agency access</div>
+  </div>
+  <div class="logo-placeholder">Your Logo Here</div>
+</div>
+
+<div class="intro-box">
+  <p>This guide walks you through setting up Meta Business Manager (which manages both Facebook and Instagram advertising) and giving us the access we need to run your ad campaigns. The process takes about <strong>15–20 minutes</strong>.</p>
+</div>
+
+<div class="what-you-need">
+  <h3>📋 What You'll Need Before Starting</h3>
+  <ul>
+    <li>A personal Facebook account (required to create a Business Manager — it stays private)</li>
+    <li>Your business name, address, and website URL</li>
+    <li>A credit or debit card for ad billing</li>
+    <li>Access to your Facebook Business Page (if you have one already)</li>
+    <li>Access to your Instagram Business account (if applicable)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title">Part 1 — Create Your Meta Business Manager</div>
+
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h4>Go to Meta Business Suite</h4>
+      <p>Open your browser and go to <span class="url">https://business.facebook.com</span></p>
+      <p>Click <strong>"Create an account"</strong> (or log in if you already have a Business Manager).</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h4>Log in with your personal Facebook account</h4>
+      <p>Meta requires a personal Facebook account to verify your identity. Your personal profile is never visible to us or used in ads — it simply proves you're a real person.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h4>Enter your business details</h4>
+      <p>Fill in your <strong>Business name</strong>, <strong>your name</strong>, and <strong>business email address</strong>. Click <strong>"Submit"</strong>.</p>
+      <p>Check your email inbox and confirm the verification email from Meta.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h4>Add your Facebook Page to Business Manager</h4>
+      <p>Go to <strong>Settings</strong> (gear icon) → <strong>"Accounts"</strong> → <strong>"Pages"</strong> → <strong>"Add"</strong>.</p>
+      <p>If you own the page: choose <strong>"Add a Page"</strong> and select it. If someone else manages it, choose <strong>"Request Access to a Page"</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">5</div>
+    <div class="step-content">
+      <h4>Connect your Instagram account (if applicable)</h4>
+      <p>Go to <strong>Settings</strong> → <strong>"Accounts"</strong> → <strong>"Instagram accounts"</strong> → <strong>"Add"</strong>.</p>
+      <p>Log in with your Instagram credentials to link it to your Business Manager.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">6</div>
+    <div class="step-content">
+      <h4>Create an Ad Account (if you don't have one)</h4>
+      <p>Go to <strong>Settings</strong> → <strong>"Accounts"</strong> → <strong>"Ad accounts"</strong> → <strong>"Add"</strong> → <strong>"Create a new ad account"</strong>.</p>
+      <p>Name it your business name, select your <strong>time zone</strong> and <strong>currency</strong>.</p>
+      <p class="important">⚠ Time zone and currency cannot be changed after creation — double-check before confirming.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">7</div>
+    <div class="step-content">
+      <h4>Add a payment method</h4>
+      <p>Inside your Ad Account, go to <strong>"Payment settings"</strong> and add your credit or debit card. This card will be charged for your ad spend.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Part 2 — Grant Us Partner Access</div>
+
+  <div class="note-box">
+    <p><strong>Important:</strong> Partner access is the proper way to grant an agency access. Never share your personal login credentials — partner access keeps your account secure and lets you revoke access at any time.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h4>Go to Business Settings</h4>
+      <p>In Business Manager, click the <strong>gear icon</strong> (Settings) in the bottom-left corner.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h4>Navigate to Partners</h4>
+      <p>In the left menu under <strong>"Users"</strong>, click <strong>"Partners"</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h4>Click "Add" and enter our Business ID</h4>
+      <p>Click the <strong>"Add"</strong> button, then select <strong>"Give a partner access to your assets"</strong>.</p>
+      <p>Enter our <strong>Meta Business ID</strong> (shown in the green box below).</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h4>Assign access to your Ad Account</h4>
+      <p>After entering our Business ID, you'll see an asset assignment screen. Select <strong>"Ad accounts"</strong>, find your ad account, and toggle on <strong>"Manage campaigns"</strong> access.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">5</div>
+    <div class="step-content">
+      <h4>Assign access to your Facebook Page</h4>
+      <p>While still in the partner assignment screen, click <strong>"Pages"</strong>, select your business page, and toggle on <strong>"Manage Page"</strong> and <strong>"Create content"</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">6</div>
+    <div class="step-content">
+      <h4>Assign access to your Instagram account</h4>
+      <p>Click <strong>"Instagram accounts"</strong>, select your account, and toggle on <strong>"Manage Instagram account"</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">7</div>
+    <div class="step-content">
+      <h4>Assign access to your Pixel (if it exists)</h4>
+      <p>Click <strong>"Pixels"</strong>, select your Meta Pixel, and toggle on <strong>"Manage Pixel"</strong>. If you don't have a pixel yet, that's fine — we'll create one.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">8</div>
+    <div class="step-content">
+      <h4>Click "Save Changes"</h4>
+      <p>Review all assignments and click <strong>"Save Changes"</strong>. We'll now be able to see and manage the assets you've shared.</p>
+    </div>
+  </div>
+</div>
+
+<div class="access-box">
+  <h3>✅ Information to Send Back to Us</h3>
+  <p>Once you've completed the steps above, please send us:</p>
+  <div class="info-field">
+    <span class="label">Your Meta Business Manager ID</span>
+    <span class="value">Settings → Business info → Business ID</span>
+  </div>
+  <div class="info-field">
+    <span class="label">Your Ad Account ID</span>
+    <span class="value">Settings → Accounts → Ad accounts (starts with "act_")</span>
+  </div>
+  <div class="info-field">
+    <span class="label">Confirmation that partner access was granted</span>
+    <span class="value">using our Business ID below</span>
+  </div>
+  <p style="margin-top: 12px;"><strong>Our Meta Business ID:</strong> <span class="url">[YOUR AGENCY BUSINESS ID HERE]</span></p>
+</div>
+
+<div class="help-box">
+  <h4>Need help?</h4>
+  <p>If you get stuck on any step, don't worry — just reach out to us and we'll walk you through it or handle it together on a quick screen share.</p>
+</div>
+
+<div class="footer">
+  <p>Prepared by [Your Agency Name] · Confidential</p>
+</div>
+
+</body>
+</html>

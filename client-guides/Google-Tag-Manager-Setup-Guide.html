@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Tag Manager — Client Setup Guide</title>
+<style>
+  @page { size: letter; margin: 0.75in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #1a1a2e; line-height: 1.6; background: #fff; max-width: 8.5in; margin: 0 auto; padding: 40px; }
+  .header { display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #4393e6; padding-bottom: 20px; margin-bottom: 30px; }
+  .header h1 { font-size: 26px; color: #4393e6; font-weight: 700; }
+  .header .logo-placeholder { width: 120px; height: 50px; border: 2px dashed #ccc; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #999; text-align: center; }
+  .subtitle { font-size: 14px; color: #666; margin-top: 4px; }
+  .intro-box { background: #f0f6ff; border-left: 4px solid #4393e6; padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 30px; }
+  .intro-box p { font-size: 14px; color: #333; }
+  .what-you-need { background: #fffbe6; border: 1px solid #ffe082; border-radius: 8px; padding: 16px 20px; margin-bottom: 30px; }
+  .what-you-need h3 { font-size: 16px; color: #f57f17; margin-bottom: 8px; }
+  .what-you-need ul { padding-left: 20px; }
+  .what-you-need li { font-size: 14px; color: #333; margin-bottom: 4px; }
+  .section { margin-bottom: 28px; page-break-inside: avoid; }
+  .section-title { font-size: 20px; font-weight: 700; color: #1a1a2e; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #e8e8e8; }
+  .step { display: flex; gap: 14px; margin-bottom: 16px; page-break-inside: avoid; }
+  .step-number { flex-shrink: 0; width: 32px; height: 32px; background: #4393e6; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; margin-top: 2px; }
+  .step-content h4 { font-size: 15px; font-weight: 600; color: #1a1a2e; margin-bottom: 4px; }
+  .step-content p { font-size: 13px; color: #555; }
+  .step-content .url { font-family: 'Consolas', monospace; background: #f5f5f5; padding: 2px 8px; border-radius: 4px; font-size: 12px; color: #4393e6; }
+  .step-content .important { color: #d32f2f; font-weight: 600; }
+  .access-box { background: #e8f5e9; border: 2px solid #66bb6a; border-radius: 8px; padding: 20px; margin: 30px 0; }
+  .access-box h3 { color: #2e7d32; font-size: 18px; margin-bottom: 10px; }
+  .access-box p { font-size: 14px; color: #333; margin-bottom: 6px; }
+  .info-field { background: #fff; border: 1px solid #c8e6c9; border-radius: 6px; padding: 10px 14px; margin: 6px 0; display: flex; justify-content: space-between; align-items: center; }
+  .info-field .label { font-size: 13px; font-weight: 600; color: #555; }
+  .info-field .value { font-size: 13px; color: #999; font-style: italic; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 2px solid #e8e8e8; text-align: center; font-size: 12px; color: #999; }
+  .help-box { background: #fff3e0; border: 1px solid #ffcc80; border-radius: 8px; padding: 14px 18px; margin-top: 24px; }
+  .help-box h4 { color: #e65100; font-size: 14px; margin-bottom: 4px; }
+  .help-box p { font-size: 13px; color: #555; }
+  .tip-box { background: #e3f2fd; border: 1px solid #90caf9; border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
+  .tip-box p { font-size: 13px; color: #1565c0; }
+  @media print {
+    body { padding: 0; }
+    .step { break-inside: avoid; }
+    .section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>Google Tag Manager — Setup Guide</h1>
+    <div class="subtitle">How to set up Google Tag Manager &amp; grant agency access</div>
+  </div>
+  <div class="logo-placeholder">Your Logo Here</div>
+</div>
+
+<div class="intro-box">
+  <p>Google Tag Manager (GTM) lets us install and manage all your marketing tracking codes (Google Ads, Meta Pixel, Analytics, etc.) from one place — without needing to touch your website code every time. This guide walks you through creating a GTM account and giving us access. The process takes about <strong>5–10 minutes</strong>.</p>
+</div>
+
+<div class="what-you-need">
+  <h3>📋 What You'll Need Before Starting</h3>
+  <ul>
+    <li>A Google account (Gmail or Google Workspace email)</li>
+    <li>Your website URL</li>
+  </ul>
+</div>
+
+<div class="tip-box">
+  <p><strong>Already have Google Tag Manager?</strong> If your website developer or a previous agency set up GTM, skip Part 1 and go directly to Part 2 to grant us access. If you're not sure whether you have GTM, ask your web developer or let us know — we can check for you.</p>
+</div>
+
+<div class="section">
+  <div class="section-title">Part 1 — Create Your Google Tag Manager Account</div>
+
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h4>Go to Google Tag Manager</h4>
+      <p>Open your browser and go to <span class="url">https://tagmanager.google.com</span></p>
+      <p>Sign in with your Google account.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h4>Click "Create Account"</h4>
+      <p>Click the <strong>"Create Account"</strong> button.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h4>Set up your Account</h4>
+      <p>Enter an <strong>Account Name</strong> (use your business name). Select your <strong>Country</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h4>Set up your Container</h4>
+      <p>Enter a <strong>Container Name</strong> (use your website URL, e.g., "www.yourbusiness.com"). Select <strong>"Web"</strong> as the target platform. Click <strong>"Create"</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">5</div>
+    <div class="step-content">
+      <h4>Accept the Terms of Service</h4>
+      <p>Review and accept Google's Terms of Service when prompted.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">6</div>
+    <div class="step-content">
+      <h4>Note your Container ID</h4>
+      <p>You'll see a popup with installation code. Your <strong>Container ID</strong> starts with <strong>"GTM-"</strong> and appears at the top of the screen. Write this down — we'll need it.</p>
+      <p><strong>You don't need to install the code yourself</strong> — we'll handle the installation, or we'll send the code snippets to your web developer with clear instructions.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Part 2 — Grant Us Access to Your Tag Manager</div>
+
+  <div class="step">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h4>Go to the Admin panel</h4>
+      <p>In Google Tag Manager, click the <strong>"Admin"</strong> tab at the top of the screen.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h4>Open User Management</h4>
+      <p>Under the <strong>"Account"</strong> column (left side), click <strong>"User Management"</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h4>Click the "+" button and select "Add users"</h4>
+      <p>Click the blue <strong>"+"</strong> icon in the top-right corner, then click <strong>"Add users"</strong>.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h4>Enter our email address</h4>
+      <p>Type in the email address we provide (shown in the green box below).</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">5</div>
+    <div class="step-content">
+      <h4>Set Account-level permissions</h4>
+      <p>Check the box for <strong>"Administrator"</strong> at the Account level. This lets us manage container settings and user access.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">6</div>
+    <div class="step-content">
+      <h4>Set Container-level permissions</h4>
+      <p>For your website container, select <strong>"Publish"</strong> permission. This lets us create, edit, and publish tracking tags on your site.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">7</div>
+    <div class="step-content">
+      <h4>Click "Invite"</h4>
+      <p>Review the permissions and click <strong>"Invite"</strong>. We'll receive an email and accept the invite on our end.</p>
+    </div>
+  </div>
+</div>
+
+<div class="access-box">
+  <h3>✅ Information to Send Back to Us</h3>
+  <p>Once you've completed the steps above, please send us:</p>
+  <div class="info-field">
+    <span class="label">Your GTM Container ID (starts with GTM-)</span>
+    <span class="value">visible at the top of your Tag Manager dashboard</span>
+  </div>
+  <div class="info-field">
+    <span class="label">Whether GTM code is already installed on your website</span>
+    <span class="value">yes / no / not sure</span>
+  </div>
+  <div class="info-field">
+    <span class="label">Confirmation that access was granted</span>
+    <span class="value">to our email below</span>
+  </div>
+  <div class="info-field">
+    <span class="label">Your web developer's contact info (if applicable)</span>
+    <span class="value">so we can coordinate code installation</span>
+  </div>
+  <p style="margin-top: 12px;"><strong>Grant access to:</strong> <span class="url">[YOUR AGENCY EMAIL HERE]</span></p>
+</div>
+
+<div class="help-box">
+  <h4>Need help?</h4>
+  <p>If you get stuck on any step or aren't sure if GTM is already on your site, just reach out — we can check for you and walk you through the setup.</p>
+</div>
+
+<div class="footer">
+  <p>Prepared by [Your Agency Name] · Confidential</p>
+</div>
+
+</body>
+</html>
